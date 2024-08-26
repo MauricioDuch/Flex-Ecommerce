@@ -3,8 +3,11 @@
 ## Integrantes
 
 [Mauricio Duch]
+<br>
 [Santiago Derito Vidan]
+<br>
 [Julian David Zaffino]
+<br>
 [Ramiro Kechichian]
 
 ## Nuestros productos
