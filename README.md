@@ -66,11 +66,11 @@ Aquí les dejamos el acceso para visualizar nuestros [Bocetos](https://www.figma
 
 ##### Colores
 
-Verde1 (Footer y Header) = #A6A6A6
+Gris1 (Footer y Header) = #A6A6A6
 
-Verde2 (Fondo) = #000000
+Negro2 (Fondo) = #000000
 
-Verde3 = #000000
+Negro3 = #000000
 
 Gris (Eslogan) = #F4F3EE
 
