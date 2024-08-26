@@ -1,130 +1,123 @@
 @import url(footer.css);
 @import url(header.css);
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 body {
-    background-color: #E7E7E7;
-    font-family: "Heebo";
+  background-color: #e7e7e7;
+  font-family: "Heebo";
 }
 
 a {
-    display: block;
-    color: black;
+  display: block;
+  color: black;
 }
 
 #imagen-principal {
-    width: 100%;
-    margin: 1.25rem 0px 1.25rem 0px;
+  width: 100%;
+  margin: 1.25rem 0px 1.25rem 0px;
 }
 
 .texto-oferta {
-    margin: 1rem;
+  margin: 1rem;
 }
 
 .ofertas h3 {
-    margin: 0.625rem 2rem;
+  margin: 0.625rem 2rem;
 }
 
 section article:hover {
-    box-shadow: 0px 0px 0.625rem rgb(100, 100, 100);
+  box-shadow: 0px 0px 0.625rem rgb(100, 100, 100);
 }
 
-section article{
-    transition: box-shadow 450ms;
-    text-align: center;
-    background-color: white;
-    width: 80vw;
-    margin: auto;
-    margin-bottom: 1.25rem;
+section article {
+  transition: box-shadow 450ms;
+  text-align: center;
+  background-color: white;
+  width: 80vw;
+  margin: auto;
+  margin-bottom: 1.25rem;
 }
-
-
 
 div a {
-    width: 28vw;
-    text-align: center;
-    background-color: white;
-    margin-top: 0.3125rem;
-    min-width: fit-content;
-    max-width: 6.5rem;
+  width: 28vw;
+  text-align: center;
+  background-color: white;
+  margin-top: 0.3125rem;
+  min-width: fit-content;
+  max-width: 6.5rem;
 }
 
 article .descripcion {
-    border-top: 1px solid gray;
-    width: 80vw;
+  border-top: 1px solid gray;
+  width: 80vw;
 }
 
 article div {
-    width: 80vw;
+  width: 80vw;
 }
 
 article img {
-    width: 60vw;
+  width: 60vw;
 }
 
-.verde{
-    background-color:#248232 ;
-    color: #fff;
+.verde {
+  background-color: #000000;
+  color: #fff;
 }
-
 
 .agregar-carrito {
-    margin: 0.625rem 0px;
-    color: white;
-    background-color: #248232;
-    padding: 0.3125rem;
-    border: none;
-    border-radius: 0.3125rem;
-    transition: box-shadow 450ms
+  margin: 0.625rem 0px;
+  color: white;
+  background-color: #000000;
+  padding: 0.3125rem;
+  border: none;
+  border-radius: 0.3125rem;
+  transition: box-shadow 450ms;
 }
 
 .agregar-carrito:hover {
-    box-shadow: 0px 0px 0.625rem rgb(100, 100, 100);
+  box-shadow: 0px 0px 0.625rem rgb(100, 100, 100);
 }
 
 @media (min-width: 768px) {
-    .ofertas {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  .ofertas {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    .ofertas article {
-        
-        width: 44vw;
-    }
-    div a {
-        width: 15vw;
-    
-    }
-    article .descripcion {
-        
-        width: 44vw;
-    }
-    article div {
-        width: 44vw;
-    }
-    article img {
-        width: 40vw;
-    }
+  .ofertas article {
+    width: 44vw;
+  }
+  div a {
+    width: 15vw;
+  }
+  article .descripcion {
+    width: 44vw;
+  }
+  article div {
+    width: 44vw;
+  }
+  article img {
+    width: 40vw;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .ofertas article {
-        width: 23vw;
-    }
-    article .descripcion {
-        
-        width: 23vw;
-    }
-    article div {
-        width: 23vw;
-    }
-    article img {
-        width: 20vw;
-    }
+  .ofertas article {
+    width: 23vw;
+  }
+  article .descripcion {
+    width: 23vw;
+  }
+  article div {
+    width: 23vw;
+  }
+  article img {
+    width: 20vw;
+  }
 }

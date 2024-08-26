@@ -1,199 +1,188 @@
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 header {
-    background-color: #248232;
+  background-color: #a6a6a6;
 }
 
 .encabezado {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .imagen-logo {
-    position: absolute;
-    top: 0.125rem;
-    left: 0.3125rem;
-    width: 2.5rem;
-    height: 2.5rem;
+  position: absolute;
+  top: 0.125rem;
+  left: 0.3125rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .searchbar {
-    position: relative;
-    background-color: white;
-    margin-top: 0.625rem;
-    width: 50vw;
-
+  position: relative;
+  background-color: white;
+  margin-top: 0.625rem;
+  width: 50vw;
 }
 
-
-.searchbar input , 
+.searchbar input,
 .searchbar button {
-    background-color: white;
-    border: none;
+  background-color: white;
+  border: none;
 }
 
 .searchbar input {
-    width: 100%;
-    height: 100%;
-    padding: 5px;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
 }
 
 .searchbar button {
-    position: absolute;
-    top: 0.3125rem;
-    right: 0.3125rem;
+  position: absolute;
+  top: 0.3125rem;
+  right: 0.3125rem;
 }
 
 #usuario {
-    position: absolute;
-    top: 0.3125rem;
-    right: 2.8125rem;
-    color: white;
-    padding: 0.3125rem 0.625rem;
-    background-color: black;
-    border-radius: 3.125rem;
-    width: 2.125rem;
-    height: 2.125rem;
+  position: absolute;
+  top: 0.3125rem;
+  right: 2.8125rem;
+  color: white;
+  padding: 0.3125rem 0.625rem;
+  background-color: black;
+  border-radius: 3.125rem;
+  width: 2.125rem;
+  height: 2.125rem;
 }
 
-
-
-
-
 #carrito {
-    position: absolute;
-    top: 0.3125rem;
-    right: 0.3125rem;
-    color: white;
-    padding: 0.3125rem 0.5rem;
-    background-color: black;
-    border-radius: 3.125rem;
-    width: 2.125rem;
-    height: 2.125rem;
+  position: absolute;
+  top: 0.3125rem;
+  right: 0.3125rem;
+  color: white;
+  padding: 0.3125rem 0.5rem;
+  background-color: black;
+  border-radius: 3.125rem;
+  width: 2.125rem;
+  height: 2.125rem;
 }
 
 #btn {
-    position: absolute;
-    top: 0.3125rem;
-    right: 3rem;
-    color: white;
-    padding: 0.3125rem 0.5rem;
-    background-color: black;
-    border-radius: 3.125rem;
-    width: 2.125rem;
-    height: 2.125rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 4;
+  position: absolute;
+  top: 0.3125rem;
+  right: 3rem;
+  color: white;
+  padding: 0.3125rem 0.5rem;
+  background-color: black;
+  border-radius: 3.125rem;
+  width: 2.125rem;
+  height: 2.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
 }
 
 #menu-desplegable {
-    background-color: black;
-    width: 28vw;
-    position: absolute;
-    top: 0vw;
-    right: 1vw;
-    display: flex;
-    flex-flow: column;
-    gap: 0.5rem;
-    z-index: 4;
-    transform: translateY(-100%);
-    transition: all .3s ease-out;
-    padding: 0.5rem;
-    max-width: 150px;
+  background-color: black;
+  width: 28vw;
+  position: absolute;
+  top: 0vw;
+  right: 1vw;
+  display: flex;
+  flex-flow: column;
+  gap: 0.5rem;
+  z-index: 4;
+  transform: translateY(-100%);
+  transition: all 0.3s ease-out;
+  padding: 0.5rem;
+  max-width: 150px;
 }
 
-#menu-desplegable li a{
-   color: white;
+#menu-desplegable li a {
+  color: white;
 }
 
 #menu-desplegable.active {
-    transform: translateY(2.5rem);
+  transform: translateY(2.5rem);
 }
 
 .imagenes-marcas {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1.25rem;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.25rem;
 }
 
 .imagenes-marcas a img {
-    margin: 1.25rem 0px 0.9375rem 0px;
-    filter: brightness(1.1);
-    mix-blend-mode: screen;
+  margin: 1.25rem 0px 0.9375rem 0px;
+  filter: brightness(1.1);
+  mix-blend-mode: screen;
 }
-.imagenes-marcas h4{
-    color: white;
-    margin-top: 3.2rem;
-    font-size: 4vw;
-
+.imagenes-marcas h4 {
+  color: white;
+  margin-top: 3.2rem;
+  font-size: 4vw;
 }
 
 #logo-nike {
-    width: 23vw;
-    margin-top: 1.75rem;
-    max-width: 6rem;
+  width: 23vw;
+  margin-top: 1.75rem;
+  max-width: 6rem;
 }
 
 #logo-puma {
-    width: 23vw;
-    margin-top: 1.5625rem;
-    max-width: 6rem;
+  width: 23vw;
+  margin-top: 1.5625rem;
+  max-width: 6rem;
 }
 
 #logo-adidas {
-    position: relative;
-    top: 10%;
-    width: 23vw;
-    margin-top: 1.375rem;
-    max-width: 6rem;
+  position: relative;
+  top: 10%;
+  width: 23vw;
+  margin-top: 1.375rem;
+  max-width: 6rem;
 }
 
-
 @media screen and (min-width: 768px) {
-    .imagenes-marcas h4{
-        margin-top: 3.3rem;
-        font-size: 22px
-    }
+  .imagenes-marcas h4 {
+    margin-top: 3.3rem;
+    font-size: 22px;
+  }
 
-    .imagen-logo {
-        width: 4.2rem;
-        height: 4.2rem;
-    }
+  .imagen-logo {
+    width: 10rem;
+    height: 4.2rem;
+  }
 
-    .searchbar {
-        margin-top: 1.25rem;
-        margin-right: 0px;
-    }
+  .searchbar {
+    margin-top: 1.25rem;
+    margin-right: 0px;
+  }
 
-    #carrito {
-        top: 0.9375rem;
-        right: 0.625rem;
-    }
+  #carrito {
+    top: 0.9375rem;
+    right: 0.625rem;
+  }
 
-    #usuario {
-        top: 0.9375rem;
-        right: 3.125rem;
-    }
+  #usuario {
+    top: 0.9375rem;
+    right: 3.125rem;
+  }
 
-
-    #btn {
-        top: 0.9375rem;
-        right: 3.125rem;
-    }
-    #menu-desplegable {
-        width: 150px
-    }
-    #menu-desplegable.active {
-        transform: translateY(3.1rem);
-    }
-   
+  #btn {
+    top: 0.9375rem;
+    right: 3.125rem;
+  }
+  #menu-desplegable {
+    width: 150px;
+  }
+  #menu-desplegable.active {
+    transform: translateY(3.1rem);
+  }
 }

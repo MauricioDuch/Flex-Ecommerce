@@ -1,40 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <%- include('../partials/head.ejs')  %> 
-    <link rel="stylesheet" href="/css/userProfile.css">
-    <link rel="icon" type="image/png" href="/img/logo-futbolXI.png"/>
-    <title> Perfil de <%= user.nombre + " " + user.apellido%>  </title>
-
-</head>
-<body>
-    <header>
-        <%- include('../partials/header.ejs')  %> 
-    </header>
+  <head>
+    <%- include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/userProfile.css" />
+    <link rel="icon" type="image/png" href="/img/logo2-modified.png" />
+    <title>Perfil de <%= user.nombre + " " + user.apellido%></title>
+  </head>
+  <body>
+    <header><%- include('../partials/header.ejs') %></header>
     <main>
-            <section>
-                <h1> Detalle de Usuario <%= user.id %> </h1>
-                <article>
-                    <img src="/img/Usuarios/<%= user.image %>" class="imagen-usuario" alt="">
-                    <h3> <span> Nombre:</span> <%= user.nombre %> <%= user.apellido %>  </h3>
-                    <p class="info-usuario"> <span> Email:</span> <%= user.email %> </p>
-                    <p class="info-usuario" id="categoria"> <span> Categoría:</span> <% if(user.admin == 1){ %>
-                        Administrador
-                   <% } %> 
-                <% if(user.admin !== 1) { %> 
-                    Cliente
-                   <% } %> 
-                </p>
-                    <a href="/userEdit/<%= user.id%>" class="boton">Editar Usuario</a>
-                    <form action="/borraruser?m=DELETE" method="post">
-                        <input type="hidden" name="id" value="<%= user.id %>">
-                        <button type="submit" class="boton">Eliminar Usuario</button>
-                    </form>
-                </article>
-            </section>
+      <section>
+        <h1>Detalle de Usuario <%= user.id %></h1>
+        <article>
+          <img
+            src="/img/Usuarios/<%= user.image %>"
+            class="imagen-usuario"
+            alt=""
+          />
+          <h3><span> Nombre:</span> <%= user.nombre %> <%= user.apellido %></h3>
+          <p class="info-usuario"><span> Email:</span> <%= user.email %></p>
+          <p class="info-usuario" id="categoria">
+            <span> Categoría:</span> <% if(user.admin == 1){ %> Administrador <%
+            } %> <% if(user.admin !== 1) { %> Cliente <% } %>
+          </p>
+          <a href="/userEdit/<%= user.id%>" class="boton">Editar Usuario</a>
+          <form action="/borraruser?m=DELETE" method="post">
+            <input type="hidden" name="id" value="<%= user.id %>" />
+            <button type="submit" class="boton">Eliminar Usuario</button>
+          </form>
+        </article>
+      </section>
     </main>
-    <footer>
-        <%- include('../partials/footer.ejs')  %> 
-    </footer>
-</body>
+    <footer><%- include('../partials/footer.ejs') %></footer>
+  </body>
 </html>

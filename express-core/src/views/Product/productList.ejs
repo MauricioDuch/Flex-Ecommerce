@@ -1,40 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <%- include('../partials/head.ejs')  %> 
-    <link rel="stylesheet" href="\css\list.css">
-    <link rel="icon" type="image/png" href="/img/logo-futbolXI.png"/>
-    <title> <%= data.title %>  </title>
+  <head>
+    <%- include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="\css\list.css" />
+    <link rel="icon" type="image/png" href="/img/logo2-modified.png" />
+    <title><%= data.title %></title>
+  </head>
+  <body>
+    <header><%- include('../partials/header.ejs') %></header>
+    <main>
+      <% if (user && user.admin == 1){ %>
+      <a href="/create"><i class="fa-solid fa-plus"></i></a>
 
-</head>
-    <body>
-        <header>
-            <%- include('../partials/header.ejs')  %> 
+      <%}%> <% for( let i = 0; i < data.marcas.length; i++ ) { %> <% let marca =
+      data.marcas[i] %>
+      <section>
+        <h3><%= marca %></h3>
 
-        </header>
-        <main>
-            <% if (user && user.admin == 1){ %> 
-            <a href="/create"><i class="fa-solid fa-plus"></i></a>
-                
-            <%}%>
-                <% for( let i = 0; i < data.marcas.length; i++ ) { %>
-                    <% let marca = data.marcas[i] %> 
-                    <section> 
-                        <h3><%= marca %></h3>
-                        
-                        <section class="ofertas">
-                
-                            <% data[marca].forEach(elemento => { %> 
-                
-                            <%- include("../partials/products.ejs",{elemento:elemento}) %> 
-                            <%});%> 
-                        </section>
-                        
-                    </section>
-                <% } %>
-        </main>
-        <footer>
-            <%- include('../partials/footer.ejs')  %> 
-        </footer>
-    </body>
+        <section class="ofertas">
+          <% data[marca].forEach(elemento => { %> <%-
+          include("../partials/products.ejs",{elemento:elemento}) %> <%});%>
+        </section>
+      </section>
+      <% } %>
+    </main>
+    <footer><%- include('../partials/footer.ejs') %></footer>
+  </body>
 </html>

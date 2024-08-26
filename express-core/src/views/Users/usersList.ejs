@@ -1,30 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <%- include('../partials/head.ejs')  %> 
-    <link rel="stylesheet" href="/css/usersList.css">
-    <link rel="icon" type="image/png" href="/img/logo-futbolXI.png"/>
-    <title> Lista de Usuarios </title>
-
-</head>
-<body>
-    <header>
-        <%- include('../partials/header.ejs')  %> 
-    </header>
+  <head>
+    <%- include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="/css/usersList.css" />
+    <link rel="icon" type="image/png" href="/img/logo2-modified.png" />
+    <title>Lista de Usuarios</title>
+  </head>
+  <body>
+    <header><%- include('../partials/header.ejs') %></header>
     <main>
-        <section>
-            <h1>Lista de usuarios</h1>
-            <% if (usuarios.length > 0) { %>
-            <ul class="contenedor-principal">
-                <% usuarios.forEach(element => { %>
-                            <%- include('../partials/userInfo.ejs',{element:element})  %> 
-                <% }) %>
-                <% } %>
-            </ul>
-        </section>
+      <section>
+        <h1>Lista de usuarios</h1>
+        <% if (usuarios.length > 0) { %>
+        <ul class="contenedor-principal">
+          <% usuarios.forEach(element => { %> <%-
+          include('../partials/userInfo.ejs',{element:element}) %> <% }) %> <% }
+          %>
+        </ul>
+      </section>
     </main>
-    <footer>
-        <%- include('../partials/footer.ejs')  %> 
-    </footer>
-</body>
+    <footer><%- include('../partials/footer.ejs') %></footer>
+  </body>
 </html>
